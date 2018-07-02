@@ -37,16 +37,16 @@ public class V1ApiController implements V1Api {
     }
 
     public ResponseEntity<List<ReferenceData>> v1ReferenceDataRetransmitGet(@NotNull @ApiParam(value = "The user name for login", required = true) @Valid @RequestParam(value = "userid", required = true) String userid,@NotNull @ApiParam(value = "MD5 digest of password", required = true) @Valid @RequestParam(value = "password", required = true) String password,@NotNull @ApiParam(value = "Initial (Inclusive) Id to retransmit", required = true) @Valid @RequestParam(value = "startId", required = true) Long startId,@NotNull @ApiParam(value = "End (Inclusive) Id to retransmit", required = true) @Valid @RequestParam(value = "endId", required = true) Long endId) {
-//        String accept = request.getHeader("Accept");
-//        if (accept != null && accept.contains("application/json")) {
-//            try {
-//                //TODO: Implementar logica de recepcion, validación y respuesta
-//                return new ResponseEntity<List<ReferenceData>>(objectMapper.readValue("[ {  \"refData\" : \"2018XXXXXXXXXXXXXXXXX\",  \"refDataType\" : \"Zx\",  \"refDataId\" : 1}, {  \"refData\" : \"2018XXXXXXXXXXXXXXXXX\",  \"refDataType\" : \"Zx\",  \"refDataId\" : 1} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
-//            } catch (IOException e) {
-//                log.error("Couldn't serialize response for content type application/json", e);
-//                return new ResponseEntity<List<ReferenceData>>(HttpStatus.INTERNAL_SERVER_ERROR);
-//            }
-//        }
+        String accept = request.getHeader("Accept");
+        if (accept != null && accept.contains("application/json")) {
+            try {
+                //TODO: Implementar logica de recepcion, validación y respuesta
+                return new ResponseEntity<List<ReferenceData>>(objectMapper.readValue("[ {  \"refData\" : \"2018XXXXXXXXXXXXXXXXX\",  \"refDataType\" : \"Zx\",  \"refDataId\" : 1}, {  \"refData\" : \"2018XXXXXXXXXXXXXXXXX\",  \"refDataType\" : \"Zx\",  \"refDataId\" : 1} ]", List.class), HttpStatus.NOT_IMPLEMENTED);
+            } catch (IOException e) {
+                log.error("Couldn't serialize response for content type application/json", e);
+                return new ResponseEntity<List<ReferenceData>>(HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        }
 
         return new ResponseEntity<List<ReferenceData>>(HttpStatus.NOT_IMPLEMENTED);
     }
