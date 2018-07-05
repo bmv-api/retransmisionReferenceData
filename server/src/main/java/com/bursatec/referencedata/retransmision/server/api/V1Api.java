@@ -28,13 +28,13 @@ import java.util.List;
 @Api(value = "v1", description = "the v1 API")
 public interface V1Api {
 
-    @ApiOperation(value = "Request retransmission of Reference Data", nickname = "v1ReferenceDataRetransmitGet", notes = "<p>Reference data retransmission mechanism to request a minimum of 1 and a maximum of 30 records.</p><p>(endId - startId + 1), must be between 1 and 30</p>", response = ReferenceData.class, responseContainer = "List", tags={ "Client", })
+    @ApiOperation(value = "Request retransmission of Reference Data", nickname = "v1ReferenceDataRetransmitGet", notes = "<p>Reference data retransmission mechanism to request a minimum of 1 record.</p>", response = ReferenceData.class, responseContainer = "List", tags={ "Client", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "successful operation", response = ReferenceData.class, responseContainer = "List"),
         @ApiResponse(code = 401, message = "Unauthorized - Authorization information is missing or invalid."),
         @ApiResponse(code = 402, message = "Invalid startId supplied"),
         @ApiResponse(code = 403, message = "Invalid endId supplied"),
-        @ApiResponse(code = 404, message = "Range invalid (endId - startId + 1), must be between 1 and 30"),
+        @ApiResponse(code = 404, message = "Range invalid, startId and endId must be valid numbers"),
         @ApiResponse(code = 405, message = "Data not found"),
         @ApiResponse(code = 500, message = "Unexpected error, internal error.") })
     @RequestMapping(value = "/v1/referenceData/retransmit",
