@@ -1,6 +1,6 @@
 
 
-package com.bursatec.referencedata.recepcion.client.auth;
+package com.bursatec.referencedata.retransmision.client.auth;
 
 public enum OAuthFlow {
     accessCode, implicit, password, application

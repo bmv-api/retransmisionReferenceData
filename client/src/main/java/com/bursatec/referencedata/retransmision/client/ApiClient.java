@@ -1,11 +1,11 @@
 
 
-package com.bursatec.referencedata.recepcion.client;
+package com.bursatec.referencedata.retransmision.client;
 
-import com.bursatec.referencedata.recepcion.client.auth.ApiKeyAuth;
-import com.bursatec.referencedata.recepcion.client.auth.Authentication;
-import com.bursatec.referencedata.recepcion.client.auth.HttpBasicAuth;
-import com.bursatec.referencedata.recepcion.client.auth.OAuth;
+import com.bursatec.referencedata.retransmision.client.auth.ApiKeyAuth;
+import com.bursatec.referencedata.retransmision.client.auth.Authentication;
+import com.bursatec.referencedata.retransmision.client.auth.HttpBasicAuth;
+import com.bursatec.referencedata.retransmision.client.auth.OAuth;
 import com.squareup.okhttp.*;
 import com.squareup.okhttp.internal.http.HttpMethod;
 import com.squareup.okhttp.logging.HttpLoggingInterceptor;

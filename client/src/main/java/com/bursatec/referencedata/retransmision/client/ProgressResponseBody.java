@@ -1,6 +1,6 @@
 
 
-package com.bursatec.referencedata.recepcion.client;
+package com.bursatec.referencedata.retransmision.client;
 
 import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.ResponseBody;

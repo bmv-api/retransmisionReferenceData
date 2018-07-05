@@ -1,4 +1,4 @@
-package com.bursatec.referencedata.recepcion.client;
+package com.bursatec.referencedata.retransmision.client;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-21T17:23:59.016Z")
 public class Configuration {
