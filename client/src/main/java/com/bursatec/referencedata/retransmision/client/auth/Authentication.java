@@ -1,8 +1,8 @@
 
 
-package com.bursatec.referencedata.recepcion.client.auth;
+package com.bursatec.referencedata.retransmision.client.auth;
 
-import com.bursatec.referencedata.recepcion.client.Pair;
+import com.bursatec.referencedata.retransmision.client.Pair;
 
 import java.util.Map;
 import java.util.List;

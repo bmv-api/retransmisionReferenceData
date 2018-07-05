@@ -1,8 +1,7 @@
-package com.bursatec.referencedata.recepcion.client.api;
+package com.bursatec.referencedata.retransmision.client.api;
 
-import com.bursatec.referencedata.recepcion.client.ApiException;
-import com.bursatec.referencedata.recepcion.client.ApiResponse;
-import com.bursatec.referencedata.recepcion.client.model.ReferenceData;
+import com.bursatec.referencedata.retransmision.client.ApiException;
+import com.bursatec.referencedata.retransmision.client.model.ReferenceData;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
@@ -11,7 +10,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;

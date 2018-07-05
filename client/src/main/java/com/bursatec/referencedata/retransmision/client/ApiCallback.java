@@ -1,6 +1,6 @@
 
 
-package com.bursatec.referencedata.recepcion.client;
+package com.bursatec.referencedata.retransmision.client;
 
 import java.util.Map;
 import java.util.List;

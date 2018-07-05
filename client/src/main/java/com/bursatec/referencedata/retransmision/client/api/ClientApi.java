@@ -1,16 +1,16 @@
 
 
-package com.bursatec.referencedata.recepcion.client.api;
+package com.bursatec.referencedata.retransmision.client.api;
 
-import com.bursatec.referencedata.recepcion.client.ApiCallback;
-import com.bursatec.referencedata.recepcion.client.ApiClient;
-import com.bursatec.referencedata.recepcion.client.ApiException;
-import com.bursatec.referencedata.recepcion.client.ApiResponse;
-import com.bursatec.referencedata.recepcion.client.Configuration;
-import com.bursatec.referencedata.recepcion.client.Pair;
-import com.bursatec.referencedata.recepcion.client.ProgressRequestBody;
-import com.bursatec.referencedata.recepcion.client.ProgressResponseBody;
-import com.bursatec.referencedata.recepcion.client.model.ReferenceData;
+import com.bursatec.referencedata.retransmision.client.ApiCallback;
+import com.bursatec.referencedata.retransmision.client.ApiClient;
+import com.bursatec.referencedata.retransmision.client.ApiException;
+import com.bursatec.referencedata.retransmision.client.ApiResponse;
+import com.bursatec.referencedata.retransmision.client.Configuration;
+import com.bursatec.referencedata.retransmision.client.Pair;
+import com.bursatec.referencedata.retransmision.client.ProgressRequestBody;
+import com.bursatec.referencedata.retransmision.client.ProgressResponseBody;
+import com.bursatec.referencedata.retransmision.client.model.ReferenceData;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
@@ -130,7 +130,7 @@ public class ClientApi {
 
     /**
      * Request retransmission of Reference Data
-     * &lt;p&gt;Reference data retransmission mechanism to request a minimum of 1 and a maximum of 30 records.&lt;/p&gt;&lt;p&gt;(endId - startId + 1), must be between 1 and 30&lt;/p&gt;
+     * &lt;p&gt;Reference data retransmission mechanism to request a minimum of 1 record.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
      * @param userid The user name for login (required)
      * @param password MD5 digest of password (required)
      * @param startId Initial (Inclusive) Id to retransmit (required)
@@ -145,7 +145,7 @@ public class ClientApi {
 
     /**
      * Request retransmission of Reference Data
-     * &lt;p&gt;Reference data retransmission mechanism to request a minimum of 1 and a maximum of 30 records.&lt;/p&gt;&lt;p&gt;(endId - startId + 1), must be between 1 and 30&lt;/p&gt;
+     * &lt;p&gt;Reference data retransmission mechanism to request a minimum of 1 record.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
      * @param userid The user name for login (required)
      * @param password MD5 digest of password (required)
      * @param startId Initial (Inclusive) Id to retransmit (required)
@@ -161,7 +161,7 @@ public class ClientApi {
 
     /**
      * Request retransmission of Reference Data (asynchronously)
-     * &lt;p&gt;Reference data retransmission mechanism to request a minimum of 1 and a maximum of 30 records.&lt;/p&gt;&lt;p&gt;(endId - startId + 1), must be between 1 and 30&lt;/p&gt;
+     * &lt;p&gt;Reference data retransmission mechanism to request a minimum of 1 record.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
      * @param userid The user name for login (required)
      * @param password MD5 digest of password (required)
      * @param startId Initial (Inclusive) Id to retransmit (required)

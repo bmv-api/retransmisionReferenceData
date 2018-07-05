@@ -11,7 +11,7 @@
  */
 
 
-package com.bursatec.referencedata.recepcion.client;
+package com.bursatec.referencedata.retransmision.client;
 
 import com.squareup.okhttp.*;
 import okio.Buffer;
