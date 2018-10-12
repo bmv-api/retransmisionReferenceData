@@ -32,8 +32,10 @@ public class ClientApiExample {
         Long endId = 789L; // Long | End (Inclusive) Id to retransmit
 
         try {
-            // BMV server's URL
-            apiInstance.getApiClient().setBasePath("https://localhost:1234");
+            
+            // BMV server's URI
+            apiInstance.getApiClient().setBasePath("https://domain-ip:port");
+            
             List<ReferenceData> result = apiInstance
                     .v1ReferenceDataRetransmitGet(userid, password, startId,
                             endId);
