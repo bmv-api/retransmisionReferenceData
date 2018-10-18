@@ -58,34 +58,39 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.bursatec.referencedata.retransmision.client.*;
-import com.bursatec.referencedata.retransmision.client.auth.*;
-import com.bursatec.referencedata.retransmision.client.*;
-import com.bursatec.referencedata.retransmision.client.api.BmvApi;
+import java.util.List;
 
-import java.util.*;
+import com.bursatec.referencedata.retransmision.client.ApiException;
+import com.bursatec.referencedata.retransmision.client.api.ClientApi;
+import com.bursatec.referencedata.retransmision.client.model.ReferenceData;
 
 public class ClientApiExample {
 
     public static void main(String[] args) {
-        
+
         ClientApi apiInstance = new ClientApi();
         String userid = "userid_example"; // String | The user name for login
-        String password = "password_example"; // String | MD5 digest of password
+        String password = "password_example"; // String | The password delivered
+                                              // by BMV
         Long startId = 789L; // Long | Initial (Inclusive) Id to retransmit
         Long endId = 789L; // Long | End (Inclusive) Id to retransmit
-               
+
         try {
-            // Here, set your server's URL
-            apiInstance.getApiClient().setBasePath("https://localhost:1234");
-            List<ReferenceData> result = apiInstance.v1ReferenceDataRetransmitGet(userid, password, startId, endId);
+            
+            // BMV server's URI
+            apiInstance.getApiClient().setBasePath("https://domain-ip:port");
+            
+            List<ReferenceData> result = apiInstance
+                    .v1ReferenceDataRetransmitGet(userid, password, startId,
+                            endId);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling ClientApi#v1ReferenceDataRetransmitGet");
-            e.printStackTrace();
+            System.err.println(e.getCode());
+            System.err.println(e.getResponseBody());
         }
     }
 }
+
 
 ```
 
